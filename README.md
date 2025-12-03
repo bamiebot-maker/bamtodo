@@ -17,7 +17,7 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 
 ## Live Demo
 
-[View Live Site](https://your-username.github.io/frontend-mentor-todo-app/)
+[View Live Site](https://bamtodo.vercel.app/)
 
 ## Screenshots
 
