@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Background Images -->
+    <div class="background background-light"></div>
+    <div class="background background-dark"></div>
+    
+    <header>
+      <div class="header-content">
+        <h1>BAMITODO</h1>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <img src="./images/icon-moon.svg" alt="Theme icon" id="theme-icon">
+        </button>
+      </div>
+      
+      <div class="todo-input-container">
+        <div class="check-circle check-circle-input"></div>
+        <input 
+          type="text" 
+          id="todo-input" 
+          placeholder="Create a new todo..."
+          aria-label="Create a new todo"
+          autocomplete="off"
+        >
+      </div>
+    </header>
+
+    <main>
+      <div class="todo-list-container">
+        <ul id="todo-list">
+          <!-- Todos will be dynamically added here -->
+        </ul>
+        
+        <div class="todo-footer">
+          <div class="items-left">
+            <span id="items-count">5</span> items left
+          </div>
+          
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+          </div>
+          
+          <button id="clear-completed" class="clear-completed">Clear Completed</button>
+        </div>
+      </div>
+      
+      <p class="drag-instruction">Drag and drop to reorder list</p>
+    </main>
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Bamietech</a>.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
